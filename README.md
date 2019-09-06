@@ -12,8 +12,9 @@
     @SpringBootApplication  
     @EnableXScheduling  
     public class Starter {  
-    
-    public static void main(String[] args) { SpringApplication.run(Starter.class); }  
+        public static void main(String[] args) {
+            SpringApplication.run(Starter.class);
+        }  
     }
     ```
     
@@ -24,8 +25,11 @@
     ```java
     @Service  
     public class CronTest{  
-      @XSchedule(cron = "0/1 * * * * ?")  
-    public void cron() { System.out.println("Hello");} }
+        @XSchedule(cron = "0/1 * * * * ?")  
+        public void cron() { 
+            System.out.println("Hello");
+        } 
+    }
     ```
     
 
